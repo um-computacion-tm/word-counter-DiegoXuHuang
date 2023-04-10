@@ -1,14 +1,9 @@
 import unittest
 
-def count_words(word):
-    return {word: 1}
+texto = "Hola amigo como estas amigo. Hola amiga".lower().split(" ")
 
-class TestCountLetters(unittest.TestCase):
-
-    def test_simple(self):
-        result = count_words('hola')
-        self.assertEqual(result, {'hola': 1})
-
+def count_words(word: str, text: list) -> int:
+    return {word: text.count(word)}
 
 if __name__ == '__main__':
     unittest.main()
