@@ -1,5 +1,6 @@
 import unittest
 from count_letters import count_letters
+texto = "Hola amigo como estas amigo. Hola amiga".lower().split(" ")
 class TestCountLetters(unittest.TestCase):
 
     def test_simple(self):
